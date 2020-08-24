@@ -1,0 +1,42 @@
+@import '../assets/scss/index';
+
+.auth-wrapper {
+  background: #f7f8fa 0% 0% no-repeat padding-box;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+
+  .navbar {
+    background-color: transparent;
+    padding: 32px !important;
+    // border-bottom: 1px solid $primary-white;
+
+    .navbar-brand {
+      color: #0930F4 !important;
+      font-family: $raleway;
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+
+  @media screen and (max-width: 625px) {
+    .navbar {
+      padding: 0.5rem 3% !important;
+
+      .navbar-brand {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .body {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    // padding-top: 32.25px;
+  }
+}

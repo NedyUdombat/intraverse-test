@@ -1,0 +1,17 @@
+@import '../../assets/scss/index';
+
+.navbar {
+  padding: 32px;
+
+  .navbar-nav {
+    .nav-link.btn {
+      color: #ffffff;
+      background: #1e40c8 0% 0% no-repeat padding-box;
+      border-color: #1e40c8;
+      width: 124px;
+      height: 48px;
+      border-radius: 24px;
+      letter-spacing: -0.2px;
+    }
+  }
+}

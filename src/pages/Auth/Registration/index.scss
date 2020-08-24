@@ -1,0 +1,155 @@
+@import '../../../assets/scss/index';
+
+.main-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  .side-image-container {
+    width: 511.5px;
+    min-height: 708px;
+    background-color: #99def5;
+    background-image: url('../../../assets/images/png/ODIO-LADY.png');
+    background-size: contain;
+
+    img {
+      width: 511.5px;
+      min-height: 708px;
+    }
+  }
+
+  .form {
+    width: 511.5px;
+    min-height: 708px;
+    padding: 54.75px 74.985px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 2.5px 2.5px 7.5px #00000029;
+
+    .title {
+      font-size: 22.5px;
+      letter-spacing: -0.315px;
+      color: #090e18;
+      line-height: 29.25px;
+      font-weight: bold;
+      margin-bottom: 54.75px;
+      text-align: left;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      letter-spacing: -0.2475px;
+      color: #4ce797;
+      line-height: 23.25px;
+      font-weight: normal;
+      margin-bottom: 26.25px;
+      text-align: left;
+    }
+
+    .form-control-div {
+      position: relative;
+      margin: 11.25px 0 0;
+      width: 100%;
+    }
+
+    .form-control-div input,
+    .form-control-div select {
+      display: block;
+      font-size: 18px;
+      font-family: 'Muli', sans-serif;
+      width: 100%;
+      height: 45px;
+      transition: 0.1s ease-in;
+      background: transparent;
+      color: #015fcc;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #015fcc;
+      border-radius: 6.75px;
+    }
+
+    .form-control-div input::placeholder {
+      color: #e4e4e4;
+    }
+
+    .form-control-div input:focus,
+    .form-control-div select:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .form-control-div input:focus + label {
+      color: #015fcc;
+      transform: translateY(-25px);
+      background-color: #ffffff;
+      padding: 0 4px 0 4px;
+    }
+
+    .form-control-div label {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      display: inline-block;
+      font-size: 13.5px;
+      min-width: 5px;
+      transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      font-size: 13.5px;
+      line-height: 15.865px;
+      color: #e4e4e4;
+    }
+
+    .reg-btn {
+      background: #223564 0% 0% no-repeat padding-box;
+      color: $primary-white;
+      margin-top: 30px;
+      margin-bottom: 43.5px;
+      width: 176.25px;
+      height: 63px;
+      font-weight: bold;
+      height: 47.25px;
+      border-radius: 3px;
+    }
+
+    .info-div {
+      .info {
+        text-align: left;
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #707070;
+        line-height: 19.5px;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .main-container {
+    padding-left: 3%;
+    padding-right: 3%;
+
+    .title {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+
+    .form {
+      .google-auth {
+        width: 100%;
+      }
+
+      .agreement {
+        width: 300px;
+        margin-top: 20px;
+      }
+
+      .reg-btn {
+        margin-top: 30px;
+        font-weight: normal;
+      }
+    }
+  }
+}
